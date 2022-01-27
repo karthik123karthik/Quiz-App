@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Codedamn - Quiz Project</title>
+</head>
+
+<body>
+    <header>
+        <a id="leaderboard">View Highscores <i class="fas fa-hand-point-left fa-lg"></i>
+        </i></a> 
+        <span style="float:right">timer:<span class="count">50</span></span>
+
+    </header>
+<main>
+
+<!-- allDone Page-->
+<div class="allDonePage">
+   <h3>all Done!</h3>
+   <p>your score is <span class="score"></span></p> 
+   <form id="submitForm" type="submit">initials:<input id="userName" to="submit" type=text placeholder="karthik"><input type="submit" id="submitbtn" value="submit"> 
+</form>
+</div>
+<!--allDone page ends here-->
+
+
+<!--startQuiz Section-->
+  <div class="startQuizWrapper">
+        <h2>Coding Quiz challenge</h2>
+        <p style="padding:0.25em">try to answer the following coding related question within time limit</p>
+        <p style="padding:0.25em">keep in mind that wrong answer will penalize your score/time by 10!</p>
+        <button class ="btn-start start-quiz-btn">start button</button>
+    </div>  
+<!--startQuiz section ends-->
+
+<!--Questions Display-->
+
+<div class="questionsBlock">
+    <h2 class="question">Commonly used data types DO NOT include:</h2>
+    <div class="option ">1. strings</div>
+    <div class="option ">2. booleans</div>
+    <div class="option ">3. alerts</div>
+    <div class="option ">4. numbers</div>
+    <button class="btn-next">next</button>
+    <hr>
+    <div class="display-answer"></div>
+</div>
+
+
+   <!--Score Board Section--> 
+    <div class="highScoreWrapper">
+        <div class="highScore">
+            <h2>HIGH SCORE</h2>
+            <section class="leaders">
+                <ul id="scoreList">                
+                </ul>
+            </section>
+            <div class="btn">
+            <button class="goBack">Go Back</button>
+            <button class="clearHighScore">Clear HighScore</button>
+            <div>
+        </div>
+    </div>
+<!--score Board ends-->
+  
+       
+</main>
+<script src="./index.js"></script>
+</body>
+
+</html>
